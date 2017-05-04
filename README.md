@@ -1,7 +1,7 @@
 # Current files
 
   - ABSOLUTELY PRIMITIVE, CREATED MANUALLY just for my own purpose.
-  - firebase-admin's definitions use lots of imports. ts2kt@0.0.12 can't handle those.
+  - firebase-function's definitions use lots of imports. ts2kt@0.0.12 can't handle those.
 
 # Make jar
 
