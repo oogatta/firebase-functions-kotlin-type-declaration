@@ -7,20 +7,20 @@ import kotlin.js.Json
 
 external val https: Https = definedExternally
 
-external interface Https {
+external class Https {
     fun onRequest(handler: (req: Request, resp: Response) -> Unit): HttpsFunction
 }
 
-external interface Request {
+external class Request {
     val body: dynamic
 }
 
-external interface Response {
+external class Response {
     fun status(statusCode: Number): Response
     fun send(message: String): Send
     fun send(message: Json): Send
 }
 
-external interface Send {}
+external class Send
 
-external interface HttpsFunction {}
+external class HttpsFunction
