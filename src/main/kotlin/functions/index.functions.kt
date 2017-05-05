@@ -4,11 +4,12 @@
 package functions
 
 import kotlin.js.Json
+import kotlin.js.Promise
 
 external val https: Https = definedExternally
 
 external class Https {
-    fun onRequest(handler: (req: Request, resp: Response) -> Unit): HttpsFunction
+    fun onRequest(handler: (req: Request, resp: Response) -> Any?): HttpsFunction
 }
 
 external class Request {
