@@ -20,6 +20,7 @@ external class Response {
     fun status(statusCode: Number): Response
     fun send(message: String): Send
     fun send(message: Json): Send
+    fun set(field:String, value:String): Send
 }
 
 external class Send
